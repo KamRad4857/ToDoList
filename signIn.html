@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TO DO List Sign In Page</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<h1 class="welcome, texthead" style="color: brown">TO DO List Sign In Page</h1>
+<br>
+<br>
+<div class="container, logborder">
+    <form method="post" action="" name="signInForm" onsubmit="signIn(); return false;">
+        <div class="innerFrame">
+            <label><b>User Name </b></label>
+            <input style="float: right" id="uName" name="username" placeholder="Name" type="text" required> <br>
+            <br>
+            <label><b>User Surname </b></label>
+            <input style="float: right" id="uSurname" name="usersurname" placeholder="Surname" type="text" required>
+            <br>
+            <br>
+            <label><b>User Login </b></label>
+            <input style="float: right" id="uLogin" name="userlogin" placeholder="Login" type="text" required> <br>
+            <br>
+            <label><b>Password </b></label>
+            <input style="float: right" id="uPassword" name="password" placeholder="Password" type="password"
+                   required><br><br>
+            <label><b>Confirm Password </b></label>
+            <input type="password" placeholder="Confirm Password" id="confirm_password" required style="float: right">
+            <br>
+            <br>
+            <br>
+            <button type="submit" id="signInClick" name="loginClick" class="texthead"
+                    style="width: 45%; align-items: center; color: white; background: #73AD21">Sign In
+            </button>
+        </div>
+    </form>
+</div>
+<br>
+<hr>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+    <div class="container" id="siText">
+        <button type="button" id="afterSignIn" class="texthead" style="width: 25%; align-items: center; float: right">
+            OK
+        </button>
+    </div>
+</div>
+<script src="resources/js/log.js"></script>
+</body>
+</html>
